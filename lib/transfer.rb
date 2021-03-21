@@ -33,6 +33,7 @@ class Transfer
       valid? && reciever.balance > @amount && self.status == "complete"
       reciver.balance -= @amount
       sender.balance += @amount
+    end
   end
 
   def rejects_transfer
