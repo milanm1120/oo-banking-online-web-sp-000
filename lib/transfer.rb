@@ -24,7 +24,7 @@ class Transfer
       receiver.balance += @amount
       self.status = "complete"
     else
-      false
+      rejects_transfer
     end
   end
 
