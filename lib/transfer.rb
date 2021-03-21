@@ -34,8 +34,9 @@ class Transfer
       receiver.balance -= @amount
       sender.balance += @amount
       self.status = "reversed"
-    end
+    else
       rejects_transfer
+    end
   end
 
   def rejects_transfer
