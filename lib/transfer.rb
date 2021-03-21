@@ -10,7 +10,10 @@ class Transfer
   end
 
   def valid?
-
+    if BankAccount.sender == "open" && BankAccount.receiver = "open"
+      true
+    else
+      false
   end
 
 end
