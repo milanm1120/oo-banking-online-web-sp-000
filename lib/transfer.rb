@@ -28,4 +28,8 @@ class Transfer
     end
   end
 
+  def rejects_transfer
+    "Transaction rejected. Please check your account balance."
+  end
+
 end
